@@ -1,0 +1,53 @@
+ایجاد جدول کانتکت
+
+CREATE TABLE contact
+(id int,
+ fullname varchar(100) ,
+ email varchar(100) , 
+ subject varchar(20) ,
+ detail varchar(200)) ;
+
+
+درج در جدول کانتکت
+
+INSERT INTO `contact`
+(`id`, `fullname`, `email`, `subject`, `detail`) 
+VALUES (2,'mohammadrahimi','mm.rahimi8253@gmail.com','warning','i have a warning');
+
+حذف در جدول کانتکت
+
+DELETE FROM `contact` WHERE id = 2 ;
+
+
+
+ایجاد جدول کاربر
+
+CREATE TABLE users
+(userid int,
+ fname varchar(50) ,
+ lname varchar(50) , 
+ email varchar(100) ,
+ phone varchar(100) ,
+username varchar(100),
+ pass varchar(50));
+
+ثبت نام 
+
+INSERT INTO 
+`users`( `fname`, `lname`, `email`, `phone`, `username`, `pass`) 
+VALUES ('mohamad','rahimi','mm.rahimi8253@gmail.com',
+        '09131111111','goodboy82','12345');
+
+حذف کاربر 
+
+DELETE FROM `users` WHERE userid=2;
+
+
+
+softdelete
+
+UPDATE `users` SET `status`='deactive' WHERE userid = 3 ;
+
+
+
+
