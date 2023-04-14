@@ -1,0 +1,27 @@
+مرتب سازی
+
+SELECT code_product,name_product,price FROM `product` ORDER BY price DESC گران ترین محصول
+
+
+SELECT code_product,name_product,price FROM `product` ORDER BY price DESC  ارزان ترین محصول
+
+
+
+SELECT * FROM `product` ORDER BY code_product ASC  قدیمی ترین محصولات
+
+
+
+SELECT * FROM `product` ORDER BY code_product DESC    جدیدترین محصولات
+
+
+فیلتر
+
+SELECT `code_product``brand``name_product` FROM `product` WHERE brand = 'butane';  محصولاتی که برند خاصی دارند مثل بوتان
+
+
+SELECT `code_product`,`name_product`,`type`,`thermalpower` 
+FROM `product` 
+WHERE `type`='package' AND thermalpower = 24; محصولاتی که پکیج هستند و توان حرارتی آن ها 24 است . 
+
+
+SELECT `code_product`,`name_product`,`price` FROM `product` WHERE price > 20000000; محصولاتی که قیمت آن ها بیشتر از 20 میلیون
