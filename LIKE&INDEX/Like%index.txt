@@ -1,0 +1,26 @@
+LIKE
+
+
+SELECT `code_product`,`name_product`,`brand` 
+FROM `product` 
+WHERE brand LIKE 'ham%'   شروع شود ham برند هایی که ابتدای آن ها با 
+
+
+
+SELECT * FROM`product` 
+WHERE `type` LIKE '%pack%' نوع آن پک داشته باشد
+
+
+SELECT * FROM`product` WHERE `name_product` LIKE '_e%' حرف دوم نام محصولات
+
+
+
+INDEX
+
+
+CREATE INDEX serial
+ON product(productserial);
+
+
+CREATE INDEX brand
+ON product(brand);
