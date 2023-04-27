@@ -1,0 +1,8 @@
+SELECT product.name_product, users.fname, users.lname
+FROM product
+INNER JOIN users ON product.user_id = users.userid
+WHERE (users.fname LIKE '%ali%' OR users.lname LIKE '%ali%')
+
+
+
+کاربرانی که ترکیبی از علی است را به ما نمایش میدهد like دو جدول را با هم الحاق کرده و با استفاده از 
